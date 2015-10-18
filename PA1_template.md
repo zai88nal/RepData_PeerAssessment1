@@ -36,7 +36,7 @@ hist(stepsByDay$steps, main = "Total steps taken by day", xlab = "Number of step
                                                           ylab = "Frequency of days")
 ```
 
-![plot of chunk histogram-1](figure/histogram-1.png) 
+![plot of chunk histogram-1](Documents/histogram-1.png) 
 
 ##### 2. Calculate and report the mean and median total number of steps taken per day
 
@@ -64,7 +64,7 @@ ggplot(data=averageStepsPerTimeBlock, aes(x=interval, y=meanSteps)) +
     ylab("averaged across all days") 
 ```
 
-![plot of chunk average-2](figure/average-2.png) 
+![plot of chunk average-2](Documents/average-2.png) 
 
 ##### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -102,7 +102,7 @@ stepsByDayImputed <- tapply(activityDataImputed$steps, activityDataImputed$date,
 hist(stepsByDayImputed, main = "Total steps taken by day", xlab="Total steps per day (Imputed)", ylab= "Frequency of days")
 ```
 
-![plot of chunk imputed-3](figure/imputed-3.png) 
+![plot of chunk imputed-3](Documents/imputed-3.png) 
 
 ##### ... and Calculate and report the mean and median total number of steps taken per day. 
 
@@ -136,4 +136,4 @@ ggplot(averagedActivityDataImputed, aes(interval, steps)) +
     ylab("average number of steps taken")
 ```
 
-![plot of chunk average_Week-4](figure/average_Week-4.png) 
+![plot of chunk average_Week-4](Documents/average_Week-4.png) 
